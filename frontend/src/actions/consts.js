@@ -1,1 +1,1 @@
-export const INIT_ACTION = "INIT_ACTION"
+export const SUBMIT_DATA = "SUBMIT_DATA";
