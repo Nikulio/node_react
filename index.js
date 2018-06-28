@@ -23,7 +23,6 @@ mongoose.connect(realUrl, function (err, db) {
     }
 });
 
-heroku config:set MONGOLAB_URI=mongodb://root:rootroo1@ds249079.mlab.com:49079/signatures
 
 
 app.get('/', function (req, res) {
