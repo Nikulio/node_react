@@ -4,11 +4,7 @@ import axios from 'axios';
 export const submitSign = (data) => {
   axios({
     method: 'post',
-    url: 'https://calm-escarpment-44796.herokuapp.com/',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Origin': 'http://localhost:8080/',
-    },
+    url: 'https://calm-escarpment-44796.herokuapp.com/api/signatures',
     data: {
       SignatureOfGuest: data.name,
       MessageofGuest: data.text,
