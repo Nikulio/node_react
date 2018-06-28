@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+@mixin center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.preview {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-position: fixed;
+	@include center();
+}
+
+.overlay {
+	background: #000;
+	width: 100%;
+	opacity: 0.6;
+	height: 100%;
+	z-index: 5;
+	position: absolute;
+}
+
+.welcome-text {
+	position: relative;
+	z-index: 10;
+	color: #fff;
+	font-family: "Pangolin", cursive;
+	font-size: 128px;
+	line-height: 1.2;
+}
