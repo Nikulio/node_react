@@ -7,7 +7,6 @@ const expressValidator = require('express-validator');
 const mongoose = require('mongoose');
 const Signature = require('./models/signature.js');
 //=========================//
-const url = 'mongodb://root:rootroo1@ds249079.mlab.com:49079/signatures';
 const port = process.env.PORT || 3000;
 const app = express();
 const realUrl = process.env.MONGOLAB_URI;
