@@ -9,7 +9,7 @@ const Signature = require("./models/signature.js");
 const cors = require("cors");
 //=========================//
 const port = process.env.PORT || 3000;
-const app = express(cors({ credentials: true, origin: true }));
+const app = express(cors());
 const realUrl = process.env.MONGOLAB_URI;
 
 console.log("--- ", realUrl);
